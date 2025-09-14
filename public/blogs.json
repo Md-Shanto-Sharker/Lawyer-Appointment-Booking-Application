@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "question": "What does a lawyer do?",
+    "answer": "A lawyer provides legal advice, prepares legal documents, represents clients in court, and helps resolve legal disputes."
+  },
+  {
+    "id": 2,
+    "question": "What qualifications are required to become a lawyer?",
+    "answer": "To become a lawyer, one must obtain an LLB (Bachelor of Laws) degree and get approval from the Bar Council to practice."
+  },
+  {
+    "id": 3,
+    "question": "What is the difference between a lawyer and an advocate?",
+    "answer": "Generally, both terms are used interchangeably. However, an advocate is specifically a lawyer who is authorized to represent clients in court."
+  },
+  {
+    "id": 4,
+    "question": "Which types of lawyers are in high demand?",
+    "answer": "Criminal, family, property, and corporate lawyers are typically in high demand."
+  },
+  {
+    "id": 5,
+    "question": "Can a lawyer help with property disputes?",
+    "answer": "Yes, property lawyers specialize in resolving property disputes, drafting property agreements, and providing legal guidance on real estate matters."
+  },
+  {
+    "id": 6,
+    "question": "Do lawyers only work in court?",
+    "answer": "No, lawyers also work outside court by drafting contracts, offering consultations, and negotiating on behalf of clients."
+  },
+  {
+    "id": 7,
+    "question": "How do I choose the right lawyer for my case?",
+    "answer": "Choose a lawyer based on their expertise in the relevant field, experience, reputation, and communication style."
+  }
+]

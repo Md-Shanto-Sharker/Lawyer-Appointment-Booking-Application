@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/LXr5dZ16/01.jpg",
+    "name": "Sophia Bennett",
+    "speciality": "Criminal Law",
+    "experience": 10,
+    "licenseNumber": "CL-102934",
+    "location": "New York, NY",
+    "availability": { "days": ["Mon", "Tue", "Wed", "Thu", "Fri"] },
+    "consultationFee": 150
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/k6rJfKF5/female-lawyer-german-civil-code-23687812.jpg",
+    "name": "Liam Carter",
+    "speciality": "Family Law",
+    "experience": 8,
+    "licenseNumber": "FL-983421",
+    "location": "Los Angeles, CA",
+    "availability": { "days": ["Mon", "Tue", "Wed", "Thu", "Fri"] },
+    "consultationFee": 120
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/wN1Pzxhc/woman-working-courtroom-29662977.jpg",
+    "name": "Ava Mitchell",
+    "speciality": "Corporate Law",
+    "experience": 12,
+    "licenseNumber": "CO-845210",
+    "location": "Chicago, IL",
+    "availability": {"days": ["Mon", "Tue", "Wed", "Thu"] },
+    "consultationFee": 180
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/0VzgjctJ/04.jpg",
+    "name": "Noah Walker",
+    "speciality": "Intellectual Property",
+    "experience": 9,
+    "licenseNumber": "IP-298374",
+    "location": "San Francisco, CA",
+    "availability": { "days": ["Tue", "Wed", "Thu", "Fri"] },
+    "consultationFee": 170
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/dsjQ1YB6/05.jpg",
+    "name": "Isabella Reed",
+    "speciality": "Immigration Law",
+    "experience": 7,
+    "licenseNumber": "IM-746291",
+    "location": "Houston, TX",
+    "availability": { "days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"] },
+    "consultationFee": 130
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/WpVLx9mm/06.jpg",
+    "name": "James Parker",
+    "speciality": "Environmental Law",
+    "experience": 11,
+    "licenseNumber": "EN-463829",
+    "location": "Seattle, WA",
+    "availability": { "days": ["Mon", "Tue", "Wed", "Thu", "Fri"] },
+    "consultationFee": 160
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co/ZzKSpb5n/07.jpg",
+    "name": "Mia Thompson",
+    "speciality": "Labor Law",
+    "experience": 6,
+    "licenseNumber": "LB-576184",
+    "location": "Atlanta, GA",
+    "availability": { "days": ["Wed", "Thu", "Fri", "Sat"] },
+    "consultationFee": 110
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co/Jjs5Cdty/08.jpg",
+    "name": "William Rivera",
+    "speciality": "Tax Law",
+    "experience": 13,
+    "licenseNumber": "TX-385920",
+    "location": "Miami, FL",
+    "availability": { "days": ["Mon", "Tue", "Wed", "Thu", "Fri"] },
+    "consultationFee": 190
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co/HfBQLK7V/09.jpg",
+    "name": "Emily Brooks",
+    "speciality": "Real Estate Law",
+    "experience": 5,
+    "licenseNumber": "RE-592038",
+    "location": "Denver, CO",
+    "availability": { "days": ["Tue", "Wed", "Thu", "Fri", "Sat"] },
+    "consultationFee": 125
+  },
+  {
+    "id": 10,
+    "image": "https://i.ibb.co/rKjGS9Ny/10.jpg",
+    "name": "Benjamin Hughes",
+    "speciality": "Banking Law",
+    "experience": 14,
+    "licenseNumber": "BK-102983",
+    "location": "Boston, MA",
+    "availability": { "days": ["Mon", "Tue", "Wed", "Thu"] },
+    "consultationFee": 175
+  },
+  {
+    "id": 11,
+    "image": "https://i.ibb.co/YF8t3vkc/11.jpg",
+    "name": "Charlotte Coleman",
+    "speciality": "Civil Rights Law",
+    "experience": 9,
+    "licenseNumber": "CR-204918",
+    "location": "Philadelphia, PA",
+    "availability": { "days": ["Wed", "Thu", "Fri"] },
+    "consultationFee": 140
+  },
+  {
+    "id": 12,
+    "image": "https://i.ibb.co/3y20mb74/12.jpg",
+    "name": "Daniel Foster",
+    "speciality": "International Law",
+    "experience": 15,
+    "licenseNumber": "IN-839201",
+    "location": "Washington, DC",
+    "availability": { "days": ["Mon", "Tue", "Wed", "Thu", "Fri"] },
+    "consultationFee": 200
+  }
+]
