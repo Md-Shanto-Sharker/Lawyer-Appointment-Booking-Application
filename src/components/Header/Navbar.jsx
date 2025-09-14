@@ -4,10 +4,10 @@ import { Link } from "react-router";
 const Navbar = () => {
   const links = (
     <>
-      <Link>
+      <Link to="/">
         <li className="font-light">Home</li>
       </Link>
-      <Link>
+      <Link to="/booking/:id">
         <li className="font-light">My-Booking</li>
       </Link>
       <Link>
@@ -20,11 +20,10 @@ const Navbar = () => {
   );
   return (
     <div className="flex justify-between items-center mt-4 w-10/12 mx-auto">
-        <div className="flex gap-2 items-center">
+      <div className="flex gap-2 items-center">
         <img className="w-7 h-7" src="/public/logo.png" alt="" />
-      <h1 className="font-black text-2xl">Law.BD</h1>
-
-        </div>
+        <h1 className="font-black text-2xl">Law.BD</h1>
+      </div>
 
       <ul className="flex gap-20">{links}</ul>
       <button className="btn btn-success">Contact Now</button>
