@@ -124,10 +124,7 @@ const LawyerDetails = () => {
 
         <div className="text-center mt-5">
           <Link to={`/booking/${singleLawyer.id}`}>
-            <button
-              
-              className="bg-green-600 text-white rounded-4xl w-full p-3"
-            >
+            <button className="bg-green-600 text-white rounded-4xl w-full p-3">
               Book Appointment Now
             </button>
           </Link>
