@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import Lawyer from "../Lawyer/Lawyer";
+export const LawyerContext = createContext(0)
 
 const Lawyers = () => {
+  const [booked,setBooked] = useState([])
   const [lawyers, setLawyers] = useState([]);
   useEffect(() => {
     fetch("/public/lawyer.json").then((res) =>
@@ -9,7 +11,7 @@ const Lawyers = () => {
     );
   }, []);
 
-  console.log(lawyers);
+  // console.log(lawyers);
   return (
     <div>
       <div className="my-10 text-center">
@@ -23,11 +25,13 @@ const Lawyers = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 justify-between gap-20 w-10/12 mx-auto">
+      <LawyerContext.Provider value={[booked,setBooked]}>
+        <div className="grid grid-cols-2 justify-between gap-20 w-10/12 mx-auto">
         {lawyers.map((lawyer) => (
           <Lawyer lawyer={lawyer}></Lawyer>
         ))}
       </div>
+      </LawyerContext.Provider>
     </div>
   );
 };

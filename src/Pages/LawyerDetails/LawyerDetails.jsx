@@ -1,7 +1,14 @@
-import React from "react";
+
 import { Link, useLoaderData, useParams } from "react-router";
+import { LawyerContext } from "../Lawyers/Lawyers";
+import { useContext } from "react";
 
 const LawyerDetails = () => {
+
+  const [booked,setBooked] = useContext(LawyerContext)
+
+
+
   const lawyer = useLoaderData();
   const { id } = useParams();
   const lawyerId = parseInt(id);
@@ -17,7 +24,14 @@ const LawyerDetails = () => {
     availability,
     consultationFee,
   } = singleLawyer;
-  console.log(lawyer);
+  // console.log(lawyer);
+
+
+  const handleClicked =(id) =>{
+      setBooked([...booked,id])
+  }
+  console.log(handleClicked);
+
   return (
     <>
       <div className="mt-20 w-10/12 mx-auto">
@@ -124,7 +138,7 @@ const LawyerDetails = () => {
 
         <div className="text-center mt-5">
           <Link to={`/booking/${singleLawyer.id}`}>
-            <button className="bg-green-600 text-white rounded-4xl w-full p-3">
+            <button onClick={()=>handleClicked(singleLawyer.id)} className="bg-green-600 text-white rounded-4xl w-full p-3">
               Book Appointment Now
             </button>
           </Link>
