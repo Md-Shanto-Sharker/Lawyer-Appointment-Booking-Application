@@ -12,6 +12,7 @@ export const router = createBrowserRouter([
       { index: true, Component: Home },
       {
         path: "/lawyerDetails/:id",
+        hydrateFallbackElement:<span className="loading loading-spinner loading-xl"></span>,
         loader: () => fetch("/lawyer.json"),
         Component: LawyerDetails,
       },

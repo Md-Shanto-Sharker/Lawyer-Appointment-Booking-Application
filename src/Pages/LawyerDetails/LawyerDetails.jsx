@@ -1,14 +1,8 @@
-
 import { Link, useLoaderData, useParams } from "react-router";
-import { LawyerContext } from "../Lawyers/Lawyers";
-import { useContext } from "react";
+
+import { addFavorite } from "../../ui";
 
 const LawyerDetails = () => {
-
-  const [booked,setBooked] = useContext(LawyerContext)
-
-
-
   const lawyer = useLoaderData();
   const { id } = useParams();
   const lawyerId = parseInt(id);
@@ -26,11 +20,9 @@ const LawyerDetails = () => {
   } = singleLawyer;
   // console.log(lawyer);
 
-
-  const handleClicked =(id) =>{
-      setBooked([...booked,id])
-  }
-  console.log(handleClicked);
+  const handleClicked = () => {
+    addFavorite(singleLawyer);
+  };
 
   return (
     <>
@@ -82,8 +74,11 @@ const LawyerDetails = () => {
               <div className="flex gap-7 items-center">
                 <h1 className="text-2xl">Availability</h1>
                 <div className="flex gap-10">
-                  {availability.days.map((avail) => (
-                    <p className="bg-[#ffe7be] border border-amber-300  px-5 rounded-4xl text-[#FFA000]">
+                  {availability.days.map((avail, index) => (
+                    <p
+                      key={index}
+                      className="bg-[#ffe7be] border border-amber-300  px-5 rounded-4xl text-[#FFA000]"
+                    >
                       {avail}
                     </p>
                   ))}
@@ -138,7 +133,10 @@ const LawyerDetails = () => {
 
         <div className="text-center mt-5">
           <Link to={`/booking/${singleLawyer.id}`}>
-            <button onClick={()=>handleClicked(singleLawyer.id)} className="bg-green-600 text-white rounded-4xl w-full p-3">
+            <button
+              onClick={() => handleClicked()}
+              className="bg-green-600 text-white rounded-4xl w-full p-3"
+            >
               Book Appointment Now
             </button>
           </Link>
